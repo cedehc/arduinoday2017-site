@@ -4,12 +4,9 @@
   "description": "Building site for arduinoday.ufpa.br",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "htmlproofer public/ --log-level debug",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rm -rf public && hugo",
-    "build": "rm -rf public && hugo && gulp",
-    "deploy:prod": "hugo",
-    "postdeploy:prod": "gulp default",
-    "serve:noreload": "hugo server --disableLiveReload"
+    "build": "rm -rf public && hugo && gulp"
   },
   "author": "Thiago Almeida",
   "license": "ISC",
