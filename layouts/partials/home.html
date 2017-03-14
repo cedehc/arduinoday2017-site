@@ -1,0 +1,19 @@
+<article id="{{ .Site.Params.home.id }}" class="panel special">
+  <div class="image">
+    <img src="{{ .Site.Params.home.image }}" alt="{{ .Site.Params.home.imageAlt }}" data-position="{{ .Site.Params.home.imagePosition }}">
+  </div>
+  <div class="content">
+    <div class="inner">
+      <header>
+        <h1>{{ markdownify .Site.Params.home.title }}</h1>
+        <p>{{ markdownify .Site.Params.home.subtitle }}</p>
+      </header>
+
+      <!-- Nav -->
+      {{ partial "nav" . }}
+
+      <!-- Social icons -->
+      {{ partial "social" . }}
+    </div>
+  </div>
+</article>

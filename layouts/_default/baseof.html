@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    {{ partial "head" . }}
+  </head>
+
+  <body class="is-loading-0 is-loading-1">
+
+    <div id="wrapper">
+      <!-- content -->
+      {{ block "main" . }}{{ end }}
+
+      <!-- footer -->
+      {{ partial "footer" . }}
+    </div>
+
+    <!-- scripts -->
+    {{ partial "scripts" . }}
+    
+  </body>
+</html>

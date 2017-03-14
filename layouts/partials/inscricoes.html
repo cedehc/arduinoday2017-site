@@ -1,0 +1,15 @@
+<article id="{{ .Site.Params.inscricoes.id }}" class="panel secondary">
+  <div class="image">
+    <img src="{{ .Site.Params.inscricoes.image }}" alt="{{ .Site.Params.inscricoes.imageAlt }}" data-position="{{ .Site.Params.inscricoes.imagePosition }}">
+  </div>
+  <div class="content">
+    {{ partial "button-back" . }}
+
+    <div class="inner">
+      <header>
+        <h2>{{ markdownify .Site.Params.inscricoes.title }}</h2>
+      </header>
+      {{ markdownify .Site.Data.texts.inscricoes.text }}
+    </div>
+  </div>
+</article>

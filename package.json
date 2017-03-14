@@ -1,0 +1,30 @@
+{
+  "name": "arduinoday.ufpa.br",
+  "version": "1.0.0",
+  "description": "Building site for arduinoday.ufpa.br",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "htmlproofer public/ --log-level debug",
+    "dev": "rm -rf public && hugo",
+    "build": "rm -rf public && hugo && gulp",
+    "deploy:prod": "hugo",
+    "postdeploy:prod": "gulp default",
+    "serve:noreload": "hugo server --disableLiveReload"
+  },
+  "author": "Thiago Almeida",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-inline-source": "^3.0.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-total-task-time": "^0.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-useref": "^3.1.2",
+    "lazypipe": "^1.0.1",
+    "run-sequence": "^1.2.2"
+  }
+}

@@ -1,0 +1,15 @@
+<article id="{{ .Site.Params.submissoes.id }}" class="panel secondary">
+  <div class="image">
+    <img src="{{ .Site.Params.submissoes.image }}" alt="{{ .Site.Params.submissoes.imageAlt }}" data-position="{{ .Site.Params.submissoes.imagePosition }}">
+  </div>
+  <div class="content">
+    {{ partial "button-back" . }}
+
+    <div class="inner">
+      <header>
+        <h2>{{ markdownify .Site.Params.submissoes.title }}</h2>
+      </header>
+      {{ markdownify .Site.Data.texts.submissoes.text }}
+    </div>
+  </div>
+</article>

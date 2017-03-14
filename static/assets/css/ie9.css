@@ -1,0 +1,1 @@
+.panel{margin:0 auto}.panel>.image{float:left}.panel>.content{float:left}.panel:after{content:'';display:block;clear:both}.panel.secondary>.content:after{display:none}

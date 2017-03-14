@@ -1,0 +1,15 @@
+<article id="{{ .Site.Params.contato.id }}" class="panel secondary">
+  <div class="image">
+    <img src="{{ .Site.Params.contato.image }}" alt="{{ .Site.Params.contato.imageAlt }}" data-position="{{ .Site.Params.contato.imagePosition }}">
+  </div>
+  <div class="content">
+    {{ partial "button-back" . }}
+
+    <div class="inner">
+      <header>
+        <h2>{{ markdownify .Site.Params.contato.title }}</h2>
+      </header>
+      {{ markdownify .Site.Data.texts.contato.text }}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,15 @@
+<article id="{{ .Site.Params.sobre.id }}" class="panel secondary">
+  <div class="image">
+    <img src="{{ .Site.Params.sobre.image }}" alt="{{ .Site.Params.sobre.imageAlt }}" data-position="{{ .Site.Params.sobre.imagePosition }}">
+  </div>
+  <div class="content">
+    {{ partial "button-back" . }}
+
+    <div class="inner">
+      <header>
+        <h2>{{ markdownify .Site.Params.sobre.title }}</h2>
+      </header>
+      {{ markdownify .Site.Data.texts.sobre.text }}
+    </div>
+  </div>
+</article>

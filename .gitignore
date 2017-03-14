@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+/public
+/public_html
+node_modules
+.firebaserc
+firebase.json

@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+  <article id="{{ .Site.Params.page404.id }}" class="panel special">
+    <div class="image">
+      <img src="{{ .Site.Params.page404.image }}" alt="{{ .Site.Params.page404.imageAlt }}" data-position="{{ .Site.Params.page404.imagePosition }}">
+    </div>
+
+    <div class="content">
+      <div class="inner">
+        <header>
+          <h1>{{ markdownify .Site.Params.page404.title }}</h1>
+          <p>{{ markdownify .Site.Params.page404.subtitle }}</p>
+        </header>
+
+        <nav id="nav">
+          <ul class="actions">
+            {{ partial "button" (dict "href" "/" "label" "Home") }}
+          </ul>
+        </nav>
+
+        <!-- Social icons -->
+        {{ partial "social" . }}
+      </div>
+    </div>
+  </article>
+
+{{ end }}

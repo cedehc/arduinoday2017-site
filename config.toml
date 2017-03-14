@@ -1,0 +1,126 @@
+# Site settings
+baseurl = "http://arduinoday.ufpa.br"
+languageCode = "pt-br"
+title = "Arduino Day / Belém / 2017"
+#googleAnalytics = "UA-82162805-1"
+enableRobotsTXT = false
+disableRSS = true
+disableSitemap = false
+verbose = true
+verboseLog = true
+watch = true
+
+[params]
+  name = "Arduino Day Belém - 2017"
+  description = "Christian Mendoza is an entrepreneur and experienced Front End Developer, looking to help bring your ideas into a web reality."
+
+  # Seção Home
+  [params.home]
+    id = "home"
+    title = "Arduino Day Belém"
+    subtitle = "01 de Abril de 2017 </br> Universidade Federal do Pará"
+    image = "/assets/img/home.jpg"
+    imageAlt = "Arduino Day Belém 2017"
+    imagePosition = "center center"
+
+  # Seção sobre
+  [params.sobre]
+    id = "sobre"
+    title = "Sobre"
+    image = "/assets/img/sobre.jpg"
+    imageAlt = "Sobre o Arduino Day"
+    imagePosition = "center center"
+  
+  # Seção programação
+  [params.agenda]
+    id = "agenda"
+    title = "Programação"
+    image = "/assets/img/agenda.jpg"
+    imageAlt = "Programação"
+    imagePosition = "center center"
+
+  # Seção inscrições
+  [params.inscricoes]
+    id = "inscricoes"
+    title = "Inscrições"
+    image = "/assets/img/inscricoes.jpg"
+    imageAlt = "Inscrições"
+    imagePosition = "top right"
+ 
+  # Seção submissões
+  [params.submissoes]
+    id = "submissoes"
+    title = "Submissões"
+    image = "/assets/img/submissoes.jpg"
+    imageAlt = "Submissões"
+    imagePosition = "top right"
+  
+  # Seção contato
+  [params.contato]
+    id = "contato"
+    title = "Contato"
+    image = "/assets/img/home.jpg"
+    imageAlt = "Contato"
+    imagePosition = "top right"
+    email = "cede-hc@googlegroups.com"
+    subject = "Informações sobre o ArduinoD17"
+
+  # 404 page
+  [params.page404]
+    id = "page404"
+    title = "<i class=\"icon fa-exclamation-circle\"></i> 404: Página não encontrada"
+    subtitle = "Desculpe, mas não encontramos o conteúdo que você está solicitando. <i class=\"icon fa-frown-o\"></i>"
+    image = "/assets/img/404.jpg"
+    imageAlt = "404: Página não encontrada"
+    imagePosition = "center center"
+
+  # Footer section
+  [params.footer]
+    text = "CopyLeft 2017. Powered by [Hugo](//gohugo.io). Fork me on github [[source]](//github.com/cedehc/arduinoday2017-site)"
+
+  # Social icons section
+  [[params.social]]
+    title = "Inscrições"
+    icon = "fa-ticket"
+    link = "https://www.sympla.com.br/event/preview/125473"
+
+  [[params.social]]
+    title = "Email"
+    icon = "fa-envelope"
+    link = "mailto:cede-hc@googlegroups.com"
+
+  [[params.social]]
+    title = "Facebook"
+    icon = "fa-facebook"
+    link = "https://www.facebook.com/Arduino-Day-Genuino-Day-Bel%C3%A9m-1415510495373986/"
+
+  [[params.social]]
+    title = "GitHub"
+    icon = "fa-github"
+    link = "https://github.com/cedehc/"
+
+  # Nav links
+  [[params.menu]]
+    name = "Sobre"
+    url = "sobre"
+    weight = 1
+
+  [[params.menu]]
+    name = "Programação"
+    url = "agenda"
+    weight = 2
+
+  [[params.menu]]
+    name = "Inscrições"
+    url = "inscricoes"
+    weight = 3
+
+  [[params.menu]]
+  name = "Submissões"
+  url = "submissoes"
+    weight = 4
+
+  [[params.menu]]
+    name = "Contato"
+    url = "contato"
+    weight = 5

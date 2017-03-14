@@ -1,0 +1,15 @@
+<article id="{{ .Site.Params.agenda.id }}" class="panel secondary">
+  <div class="image">
+    <img src="{{ .Site.Params.agenda.image }}" alt="{{ .Site.Params.agenda.imageAlt }}" data-position="{{ .Site.Params.agenda.imagePosition }}">
+  </div>
+  <div class="content">
+    {{ partial "button-back" . }}
+
+    <div class="inner">
+      <header>
+        <h2>{{ markdownify .Site.Params.agenda.title }}</h2>
+      </header>
+      {{ markdownify .Site.Data.texts.agenda.text }}
+    </div>
+  </div>
+</article>

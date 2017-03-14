@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
+{{ .Hugo.Generator }}
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+<meta property="og:title" content="{{ with .Site.Title }}{{ . }}{{ end }}">
+<meta property="og:description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
+<meta property="og:url" content="{{ .Site.BaseURL }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}assets/img/social.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@christianmendza">
+
+<title>{{ .Title }}</title>
+
+<link href="{{ .Site.BaseURL }}" rel="canonical">
+<link href="/favicon.ico" rel="icon">
+
+{{ "<!--[if lte IE 8]><script src=\"/assets/js/ie/html5shiv.js\"></script><![endif]-->" | safeHTML }}
+<link rel="stylesheet" href="/assets/css/font-awesome.css" inline>
+<link rel="stylesheet" href="/assets/css/google-fonts.css" inline>
+<link rel="stylesheet" href="/assets/css/main.css" inline>
+<link rel="stylesheet" href="/assets/css/custom.css" inline>
+<noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
+{{ "<!--[if lte IE 9]><link rel=\"stylesheet\" href=\"/assets/css/ie9.css\" /><![endif]-->" | safeHTML }}
+{{ "<!--[if lte IE 8]><link rel=\"stylesheet\" href=\"/assets/css/ie8.css\" /><![endif]-->" | safeHTML }}
+
+<script type="application/ld+json">
+  {
+    "@context": "http://www.schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Christian Mendoza",
+        "url": "{{ .Site.BaseURL }}"
+      },
+      {
+        "@type": "Person",
+        "name": "Christian Mendoza",
+        "url": "{{ .Site.BaseURL }}",
+        "sameAs": [{{ range $index, $item := after 1 .Site.Params.social }}{{ if $index }},{{ end }}"{{ .link }}"{{ end }}]
+      }
+    ]
+  }
+</script>
